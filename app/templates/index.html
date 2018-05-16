@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h3>Hi, {{ user.username }}!</h3>
+  {% for room in rooms %}
+  <div><p>{{ room.name+' '+room.id }}: <b>{{ room.size }}</b></p></div>
+  {% endfor %}
+{% endblock %}
